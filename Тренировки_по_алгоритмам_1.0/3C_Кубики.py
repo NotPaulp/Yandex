@@ -1,0 +1,16 @@
+N,M=map(int,input().split(' '))
+a=set()
+b=set()
+for i in range(N):
+    a.add(int(input()))
+for i in range(M):
+    b.add(int(input()))
+intersection1=a.intersection(b)
+print(len(intersection1))
+print(*sorted(intersection1))
+a.difference_update(intersection1)
+b.difference_update(intersection1)
+print(len(a))
+print(*sorted(a))
+print(len(b))
+print(*sorted(b))
