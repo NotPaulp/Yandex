@@ -3,20 +3,13 @@ def check(train):
     next_carriage = 1
 
     for carriage in train:
+        buffer.append(carriage)
         while buffer and buffer[-1] == next_carriage:
             buffer.pop()
             next_carriage += 1
 
-        if carriage == next_carriage:
-            next_carriage += 1
-        else:
-            buffer.append(carriage)
-
-    while buffer and buffer[-1] == next_carriage:
-        buffer.pop()
-        next_carriage += 1
-
     return next_carriage == len(train) + 1
+
 n = int(input())
 train = list(map(int, input().split()))
 result = check(train)
