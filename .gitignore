@@ -184,11 +184,7 @@ fabric.properties
 # idea folder, uncomment if you don't need it
 # .idea
 output_test.txt
-# Контест яндекс 2019
-Contest2019/
 # Тест файлы
 /**/*test*.py
-# Intern Week Offer Contest
-IWOContest*/
 # .idea
 /**/.idea
